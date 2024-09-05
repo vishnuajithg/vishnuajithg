@@ -21,7 +21,6 @@ I'm an enthusiastic individual with a Master's in Artificial Intelligence 🤖 a
 
 ###
 
-<--Tech Stack starts here-->
 
 
 <div align="left">
@@ -101,7 +100,7 @@ I'm an enthusiastic individual with a Master's in Artificial Intelligence 🤖 a
 </div>
 
 
-<--Tech Stack ends here-->
+
 
 ###
 
