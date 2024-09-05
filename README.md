@@ -45,8 +45,8 @@ I'm an enthusiastic individual with a Master's in Artificial Intelligence 🤖 a
   <img src="https://img.shields.io/badge/Postman-FF6C37?logo=postman&logoColor=black&style=for-the-badge" height="33" alt="postman logo"  />
   <img width="12" />
   <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?logo=visualstudiocode&logoColor=white&style=for-the-badge" height="33" alt="vscode logo"  />
-  <img width="12" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white&style=for-the-badge" height="33" alt="mongodb logo"  />
+  <a href="#"><img width="12" /></a>
+  <a href="#"> <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white&style=for-the-badge" height="33" alt="mongodb logo"  /></a>
 </div>
 
 ###
