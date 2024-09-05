@@ -73,7 +73,7 @@ I'm an enthusiastic individual with a Master's in Artificial Intelligence 🤖 a
 
 <div align="center">
   <!-- Discord Badge -->
-  <a href="https://discord.com/users/YOUR_DISCORD_ID" target="_blank">
+  <a href="https://discord.com/users/this.is.vishnu.ag" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="discord logo" />
   </a>
 
