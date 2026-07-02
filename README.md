@@ -51,10 +51,6 @@
 
 <hr/>
 
-## `$ tree ./projects`
-
-
-
 <hr/>
 
 ## `$ ./stack.sh`
