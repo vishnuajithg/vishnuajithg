@@ -1,0 +1,145 @@
+<svg viewBox="0 0 820 500" width="820" height="500" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated terminal: Vishnu A G — AI / LLM Engineer">
+  <style>
+    :root {
+      --bg:      #1E1E2E; /* Catppuccin Mocha base */
+      --bar:     #181825;
+      --border:  #313244;
+      --text:    #CDD6F4;
+      --green:   #A6E3A1;
+      --cyan:    #89DCEB;
+      --yellow:  #F9E2AF;
+      --magenta: #CBA6F7;
+      --muted:   #7F849C;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg:      #FAFAFA;
+        --bar:     #F0F0F0;
+        --border:  #D0D7DE;
+        --text:    #24292F;
+        --green:   #1A7F37;
+        --cyan:    #0969DA;
+        --yellow:  #9A6700;
+        --magenta: #8250DF;
+        --muted:   #6E7781;
+      }
+    }
+
+    text {
+      font-family: 'SF Mono','JetBrains Mono','Fira Code',ui-monospace,monospace;
+      font-size: 14px;
+      white-space: pre;
+    }
+    .txt   { fill: var(--text); }
+    .grn   { fill: var(--green); }
+    .cyn   { fill: var(--cyan); }
+    .ylw   { fill: var(--yellow); }
+    .mgt   { fill: var(--magenta); }
+    .mut   { fill: var(--muted); }
+    .title { fill: var(--muted); font-size: 12px; }
+
+    /* ---- one shared 14s loop ---------------------------------------- */
+    .cmd { clip-path: inset(0 100% 0 0); animation-duration: 14s; animation-iteration-count: infinite; }
+    .t1 { animation-name: type1; animation-timing-function: steps(6,  end); }
+    .t2 { animation-name: type2; animation-timing-function: steps(13, end); }
+    .t3 { animation-name: type3; animation-timing-function: steps(13, end); }
+    .t4 { animation-name: type4; animation-timing-function: steps(13, end); }
+    .t5 { animation-name: type5; animation-timing-function: steps(28, end); }
+
+    .pop, .out { opacity: 0; animation-duration: 14s; animation-iteration-count: infinite; }
+    .pop { animation-timing-function: steps(1, end); }
+    .out { animation-timing-function: linear; }
+
+    .p2 { animation-name: show14;  } .p3 { animation-name: show315; }
+    .p4 { animation-name: show47;  } .p5 { animation-name: show63;  }
+    .p6 { animation-name: show845; }
+
+    .o1  { animation-name: fade085; } .o2a { animation-name: fade245; }
+    .o2b { animation-name: fade260; } .o3a { animation-name: fade415; }
+    .o3b { animation-name: fade435; } .o4  { animation-name: fade570; }
+    .o5  { animation-name: fade785; }
+
+    .cursor { opacity: 0; animation: blink 14s steps(1, end) infinite; }
+
+    /* ---- keyframes (percent of the 14s loop) ------------------------ */
+    @keyframes type1 { 0%,1.5% {clip-path: inset(0 100% 0 0);} 7%,100%    {clip-path: inset(0 0 0 0);} }
+    @keyframes type2 { 0%,15%  {clip-path: inset(0 100% 0 0);} 23%,100%   {clip-path: inset(0 0 0 0);} }
+    @keyframes type3 { 0%,32.5%{clip-path: inset(0 100% 0 0);} 40%,100%   {clip-path: inset(0 0 0 0);} }
+    @keyframes type4 { 0%,48%  {clip-path: inset(0 100% 0 0);} 55.5%,100% {clip-path: inset(0 0 0 0);} }
+    @keyframes type5 { 0%,64%  {clip-path: inset(0 100% 0 0);} 76.5%,100% {clip-path: inset(0 0 0 0);} }
+
+    @keyframes show14  { 0%,14%   {opacity:0;} 14.1%,100% {opacity:1;} }
+    @keyframes show315 { 0%,31.5% {opacity:0;} 31.6%,100% {opacity:1;} }
+    @keyframes show47  { 0%,47%   {opacity:0;} 47.1%,100% {opacity:1;} }
+    @keyframes show63  { 0%,63%   {opacity:0;} 63.1%,100% {opacity:1;} }
+    @keyframes show845 { 0%,84.5% {opacity:0;} 84.6%,100% {opacity:1;} }
+
+    @keyframes fade085 { 0%,8.5%  {opacity:0;} 10.5%,100% {opacity:1;} }
+    @keyframes fade245 { 0%,24.5% {opacity:0;} 26.5%,100% {opacity:1;} }
+    @keyframes fade260 { 0%,26%   {opacity:0;} 28%,100%   {opacity:1;} }
+    @keyframes fade415 { 0%,41.5% {opacity:0;} 43.5%,100% {opacity:1;} }
+    @keyframes fade435 { 0%,43.5% {opacity:0;} 45.5%,100% {opacity:1;} }
+    @keyframes fade570 { 0%,57%   {opacity:0;} 59%,100%   {opacity:1;} }
+    @keyframes fade785 { 0%,78.5% {opacity:0;} 80.5%,100% {opacity:1;} }
+
+    @keyframes blink {
+      0%,84.5% {opacity:0;}
+      84.6%    {opacity:1;}
+      88%      {opacity:0;}
+      91.5%    {opacity:1;}
+      95%      {opacity:0;}
+      98.5%,100% {opacity:1;}
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .cmd       { clip-path: none; animation: none; }
+      .pop, .out { opacity: 1; animation: none; }
+      .cursor    { opacity: 1; animation: none; }
+    }
+  </style>
+
+  <!-- ================= window chrome ================= -->
+  <rect x="1" y="1" width="818" height="498" rx="12" fill="var(--bg)" stroke="var(--border)" stroke-width="1.5"/>
+  <path d="M1 13 A12 12 0 0 1 13 1 H807 A12 12 0 0 1 819 13 V44 H1 Z" fill="var(--bar)"/>
+  <line x1="1" y1="44" x2="819" y2="44" stroke="var(--border)" stroke-width="1"/>
+
+  <!-- traffic lights -->
+  <circle cx="24" cy="22.5" r="6.5" fill="#FF5F57"/>
+  <circle cx="46" cy="22.5" r="6.5" fill="#FEBC2E"/>
+  <circle cx="68" cy="22.5" r="6.5" fill="#28C840"/>
+
+  <!-- centered window title -->
+  <text x="410" y="27" text-anchor="middle" class="title">vishnuajithg@github — -zsh — 80×24</text>
+
+  <!-- ================= session ================= -->
+  <!-- 1 · whoami -->
+  <text x="26" y="84"><tspan class="grn">➜</tspan><tspan class="cyn">  ~ </tspan></text>
+  <text x="76" y="84" class="txt cmd t1">whoami</text>
+  <text x="26" y="110" class="out o1"><tspan class="mgt">Vishnu A G</tspan><tspan class="mut"> — </tspan><tspan class="txt">AI / LLM Engineer · Building Autonomous AI Systems</tspan></text>
+
+  <!-- 2 · cat focus.txt -->
+  <text x="26" y="146" class="pop p2"><tspan class="grn">➜</tspan><tspan class="cyn">  ~ </tspan></text>
+  <text x="76" y="146" class="txt cmd t2">cat focus.txt</text>
+  <text x="26" y="172" class="txt out o2a">Autonomous AI Agents · RAG Pipelines · Real-time Voice AI</text>
+  <text x="26" y="196" class="txt out o2b">NLP · Nature-Inspired Computing 🌿 · Blockchain 🛠️</text>
+
+  <!-- 3 · ls ./flagship -->
+  <text x="26" y="232" class="pop p3"><tspan class="grn">➜</tspan><tspan class="cyn">  ~ </tspan></text>
+  <text x="76" y="232" class="txt cmd t3">ls ./flagship</text>
+  <text x="26" y="258" class="cyn out o3a">nia-voice-bot/      rag-screening/      document-ai/</text>
+  <text x="26" y="282" class="cyn out o3b">workflow-builder/   acs-meeting-room/   email-system/</text>
+
+  <!-- 4 · cat stack.txt -->
+  <text x="26" y="318" class="pop p4"><tspan class="grn">➜</tspan><tspan class="cyn">  ~ </tspan></text>
+  <text x="76" y="318" class="txt cmd t4">cat stack.txt</text>
+  <text x="26" y="344" class="ylw out o4">Azure OpenAI · Gemini · FastAPI · Django · Next.js · React · Docker</text>
+
+  <!-- 5 · ./connect -->
+  <text x="26" y="380" class="pop p5"><tspan class="grn">➜</tspan><tspan class="cyn">  ~ </tspan></text>
+  <text x="76" y="380" class="txt cmd t5">./connect --linkedin --gmail</text>
+  <text x="26" y="406" class="out o5"><tspan class="mut">opening channels... </tspan><tspan class="grn">ready ✔</tspan></text>
+
+  <!-- 6 · live prompt + blinking cursor -->
+  <text x="26" y="448" class="pop p6"><tspan class="grn">➜</tspan><tspan class="cyn">  ~ </tspan></text>
+  <text x="76" y="448" class="txt cursor">█</text>
+</svg>
