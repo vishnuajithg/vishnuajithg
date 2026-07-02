@@ -5,9 +5,10 @@
 
 <div align="center">
 
+<h3>Hi 👋, I'm <b>Vishnu A G</b> — AI / LLM Engineer</h3>
+
 <img src="https://raw.githubusercontent.com/vishnuajithg/vishnuajithg/main/terminal.svg" width="100%" alt="Animated terminal — Vishnu A G · AI / LLM Engineer building autonomous AI systems" />
 
-<h3>Hi 👋, I'm <b>Vishnu A G</b> — AI / LLM Engineer</h3>
 <p><i>Building autonomous agents, RAG pipelines & real-time voice AI in production.</i></p>
 
 <a href="https://www.linkedin.com/in/vishnu-a-g-4b989a1b7" target="_blank">
